@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tram Reservation System</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.pexels.com/photos/615305/tram-train-rails-downtown-615305.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        
+
+        .container {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.85);
+            padding: 50px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 2; /* Ensure content is above the overlay */
+            position: relative;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.2em;
+            margin-right: 10px;
+        }
+
+        select {
+            padding: 10px;
+            font-size: 1.1em;
+            margin: 0 10px;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            border: none;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .container {
+                padding: 30px;
+                width: 90%;
+                max-width: 100%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            select, button {
+                font-size: 1em;
+                padding: 8px;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            label {
+                display: block;
+                font-size: 1em;
+                margin: 10px 0;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.7em;
+            }
+
+            .container {
+                padding: 20px;
+            }
+
+            select, button {
+                font-size: 0.9em;
+                padding: 7px;
+            }
+
+            label {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Tram Reservation System</h1>
+        <p>Select your Stations:</p>
+        <label for="station1">From</label>
+        <select id="station1">
+            <option value="station1">Select Station</option>
+            <option value="station1">Sealdah</option>
+            <option value="station2">Rajabazar Tram Depot</option>
+            <option value="station3">Gas Street</option>
+            <option value="station4">Kabarsthan</option>
+            <option value="station5">Purabi Cinema</option>
+        </select>
+
+        <label for="station2">To</label>
+        <select id="station2">
+            <option value="station1">Select Station</option>
+            <option value="station1">Bagmari</option>
+            <option value="station2">North Road</option>
+            <option value="station3">Maniktala</option>
+            <option value="station4">Bichili Ghat</option>
+            <option value="station5">Kumar Tuli</option>
+        </select>
+        <br><br>
+
+        <a href="under_construction.html">
+            <button>Search</button>
+        </a>
+    </div>
+
+</body>
+</html>
